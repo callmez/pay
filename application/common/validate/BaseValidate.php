@@ -18,7 +18,6 @@ use app\common\library\exception\UserException;
 use app\common\service\Code;
 use app\common\model\User as UserModel;
 use Log;
-use think\Request;
 use think\Validate;
 
 class BaseValidate extends Validate
@@ -38,7 +37,7 @@ class BaseValidate extends Validate
     public function goCheck()
     {
         //必须设置contetn-type:application/json
-        $params = Request::instance()->param();
+        $params = \request()->param();
         if (!$this->check($params)) {
             throw new ParameterException([
                     'msg'   => is_array($this->error)

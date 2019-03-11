@@ -20,7 +20,7 @@ use app\api\service\request\CheckArguments;
 use app\api\service\request\CheckFrequent;
 use app\api\service\request\CheckSign;
 use Log;
-use think\Request;
+
 /**
  * 网关入口实体
  *
@@ -55,6 +55,6 @@ class ApiRequest extends Rest
             ->setNext($checkAppkey);
 
         // 启动网关
-        $checkFrequent->start(Request::instance());
+        $checkFrequent->start(\request());
     }
 }
