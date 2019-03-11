@@ -14,7 +14,7 @@
 
 namespace app\common\library;
 
-use think\Cache;
+use Cache;
 use Log;
 
 /**

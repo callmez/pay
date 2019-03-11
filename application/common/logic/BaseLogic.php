@@ -17,7 +17,7 @@ namespace app\common\logic;
 use app\common\library\enum\CodeEnum;
 use app\common\model\BaseModel;
 use app\common\service\Code;
-use think\Cache;
+use Cache;
 use Log;
 
 class BaseLogic extends BaseModel

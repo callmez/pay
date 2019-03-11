@@ -13,7 +13,7 @@
 
 namespace app\admin\logic;
 
-
+use think\Cache;
 use app\common\library\enum\CodeEnum;
 
 class Login extends BaseAdmin
@@ -85,7 +85,7 @@ class Login extends BaseAdmin
     public function clearCache()
     {
 
-        \think\Cache::clear();
+        Cache::clear();
 
         return [ 'code' => CodeEnum::ERROR, 'msg' =>  '清理成功'];
     }

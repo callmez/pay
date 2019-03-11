@@ -12,7 +12,7 @@
  */
 
 namespace app\common\service\code;
-use think\Cache;
+use Cache;
 
 /**
  * 验证码基础类

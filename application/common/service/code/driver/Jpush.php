@@ -15,7 +15,7 @@
 namespace app\common\service\code\driver;
 
 use app\common\service\code\Driver;
-use think\Cache;
+use Cache;
 use Log;
 
 /**

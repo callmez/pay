@@ -15,7 +15,7 @@
 
 namespace app\api\service\request;
 use app\common\library\exception\ForbiddenException;
-use think\Cache;
+use Cache;
 use Log;
 use think\Request;
 
